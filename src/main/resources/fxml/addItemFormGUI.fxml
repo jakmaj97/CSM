@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane>
+    <top>
+        <BorderPane styleClass="itemsTableTitle">
+            <center>
+                <Label id="headerText" text="Formularz dodania nowej części"></Label>
+            </center>
+        </BorderPane>
+    </top>
+    <center>
+        <HBox>
+            <padding>
+                <Insets top="20" left="10" bottom="20" right="40"></Insets>
+            </padding>
+            <VBox>
+                <padding>
+                    <Insets top="20" left="10" bottom="20" right="40"></Insets>
+                </padding>
+                <Label text="Nazwa części" prefHeight="25"></Label>
+                <Label text="Cena za sztukę" prefHeight="25"></Label>
+                <Label text="Liczba sztuk" prefHeight="25"></Label>
+            </VBox>
+            <VBox>
+                <padding>
+                    <Insets top="20" left="10" bottom="20" right="40"></Insets>
+                </padding>
+                <TextField id="nameTextField"></TextField>
+                <TextField id="priceTextField"></TextField>
+                <TextField id="stateTextField"></TextField>
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox id="buttonSection" alignment="CENTER" spacing="50">
+            <padding>
+                <Insets top="20" left="40" bottom="20" right="40"></Insets>
+            </padding>
+            <children>
+                <Button id="confirmFormButton" text="Zatwierdź" prefWidth="200" prefHeight="50"></Button>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

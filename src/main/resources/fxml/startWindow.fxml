@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<BorderPane>
+    <top>
+        <BorderPane styleClass="itemsTableTitle">
+            <center>
+                <Label id="headerText" text="Witaj w Computer Shop Manager! Co chcesz zrobić?"></Label>
+            </center>
+        </BorderPane>
+    </top>
+    <center>
+        <HBox id="buttonSection" alignment="CENTER" spacing="50">
+            <padding>
+                <Insets top="20" left="40" bottom="20" right="40"></Insets>
+            </padding>
+            <children>
+                <Button id="ordersListButton" text="Lista zamówień" prefWidth="200" prefHeight="50"></Button>
+            </children>
+            <children>
+                <Button id="itemsListButton" text="Lista części" prefWidth="200" prefHeight="50"></Button>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

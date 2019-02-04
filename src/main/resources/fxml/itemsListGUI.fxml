@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane>
+    <top>
+        <BorderPane styleClass="itemsTableTitle">
+            <center>
+                <Label id="headerText" text="Lista Części"></Label>
+            </center>
+        </BorderPane>
+    </top>
+    <center>
+        <TableView id="itemsTable"  GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <columns>
+                <TableColumn id="itemId" text="Nr części" minWidth="10"  prefWidth="100">
+                </TableColumn>
+                <TableColumn id="itemName" text="Nazwa" prefWidth="450">
+                </TableColumn>
+                <TableColumn id="itemPrice" text="Cena za sztukę" prefWidth="150">
+                </TableColumn>
+                <TableColumn id="state" text="Stan" prefWidth="100">
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox id="buttonSection" alignment="CENTER" spacing="50">
+            <padding>
+                <Insets top="20" left="40" bottom="20" right="40"></Insets>
+            </padding>
+            <children>
+                <Button id="backFromItemListButton" text="Wstecz" prefWidth="200" prefHeight="50"></Button>
+            </children>
+            <children>
+                <Button id="addItemButton" text="Dodaj nową część" prefWidth="200" prefHeight="50"></Button>
+            </children>
+            <children>
+                <Button id="helpButton" text="Pomoc" prefWidth="200" prefHeight="50"></Button>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

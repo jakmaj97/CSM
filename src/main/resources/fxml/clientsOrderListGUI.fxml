@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <BorderPane styleClass="itemsTableTitle">
+            <center>
+                <Label id="headerText" text="Lista Zamówień Klientów" />
+            </center>
+        </BorderPane>
+    </top>
+    <center>
+        <TableView id="itemsTable" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <columns>
+                <TableColumn id="itemId" minWidth="10" prefWidth="150.0" text="Numer">
+                </TableColumn>
+                <TableColumn id="name" prefWidth="200.0" text="Cena">
+                </TableColumn>
+                <TableColumn id="price" prefWidth="400.0" text="Status">
+                </TableColumn>
+                <TableColumn id="state" prefWidth="100" text="Czy na raty">
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+   <bottom>
+       <HBox id="buttonSection" alignment="CENTER" spacing="50">
+           <padding>
+               <Insets top="20" left="40" bottom="20" right="40"></Insets>
+           </padding>
+           <children>
+               <Button id="backFromItemListButton" text="Wstecz" prefWidth="200" prefHeight="50"></Button>
+           </children>
+           <children>
+               <Button id="helpButton" text="Pomoc" prefWidth="200" prefHeight="50"></Button>
+           </children>
+       </HBox>
+   </bottom>
+</BorderPane>

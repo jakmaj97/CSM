@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane>
+    <top>
+        <BorderPane styleClass="itemsTableTitle4">
+            <padding>
+                <Insets left="117" right="100" bottom="100" top="199"></Insets>
+
+            </padding>
+            <center>
+                <Label id="headerText" text="Zaktualizowano stan części!"></Label>
+            </center>
+        </BorderPane>
+    </top>
+    <ImageView fitHeight="80" fitWidth="80" layoutX="10" layoutY="20">
+        <Image url="@../graphics/ok-2.png"/>
+    </ImageView>
+    <center>
+        <VBox>
+            <padding>
+                <Insets top="5" left="117" bottom="20" right="40"></Insets>
+            </padding>
+            <Label text="Zwiększono stan części o podaną liczbę."></Label>
+            <Label text="Możesz to sprawdzić na liście części."></Label>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox id="buttonSection" alignment="CENTER" spacing="50">
+            <padding>
+                <Insets top="20" left="40" bottom="20" right="40"></Insets>
+            </padding>
+            <children>
+                <Button id="okUpdatedItemStatusButton" text="OK" prefWidth="200" prefHeight="50"></Button>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Uwaga!" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wszystkie części z zamówienia są dostępne!">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zostaną zamówione części, które już znajdują się w magazynie">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <ImageView fitHeight="150.0" fitWidth="150.0" BorderPane.alignment="TOP_LEFT">
+         <image>
+            <Image url="@../graphics/warn.png" />
+         </image>
+      </ImageView>
+   </left>
+   <bottom>
+      <Button id="close" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Ok" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

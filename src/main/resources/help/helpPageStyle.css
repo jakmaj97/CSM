@@ -1,0 +1,12 @@
+section {
+  background-color: teal;
+  padding: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+p  {
+  padding: 0px;
+  margin-bottom: 0px;
+  font-family: sans-serif;
+}
